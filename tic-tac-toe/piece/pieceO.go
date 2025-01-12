@@ -5,7 +5,7 @@ type PieceO struct {
 }
 
 func (p *PieceO) SetPiece() {
-	p.piece = "X"
+	p.piece = "O"
 }
 
 func (p *PieceO) GetPiece() string {

@@ -21,3 +21,7 @@ func (pl *Player) SetName(name string) {
 func (pl *Player) GetName() string {
 	return pl.name
 }
+
+func (pl *Player) GetPlayerPiece() string {
+	return pl.piece.GetPiece()
+}
