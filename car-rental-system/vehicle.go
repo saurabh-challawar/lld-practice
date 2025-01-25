@@ -12,7 +12,8 @@ type Vehicle struct {
 	vehicleType        VehicleType
 }
 
-func (vehicle *Vehicle) NewVehicle(id int, model string, make string, seater int, bootSpace int, description string, color string, vehicleType VehicleType) {
+func NewVehicle(id int, model string, make string, seater int, bootSpace int, description string, color string, vehicleType VehicleType) *Vehicle {
+	var vehicle Vehicle
 	vehicle.id = id
 	vehicle.model = model
 	vehicle.make = make
@@ -21,6 +22,7 @@ func (vehicle *Vehicle) NewVehicle(id int, model string, make string, seater int
 	vehicle.description = description
 	vehicle.color = color
 	vehicle.vehicleType = vehicleType
+	return &vehicle
 }
 
 func (vehicle *Vehicle) GetId() int {
