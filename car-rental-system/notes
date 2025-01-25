@@ -1,0 +1,32 @@
+- Vehicle
+Attributes: model, make, seats, bootSpace, description, colour, mileage
+
+- User
+Attributes: name, age, license
+
+- Location:
+Attributes: city, state, country
+
+- Store
+Attributes: id, Location
+
+- Rent:
+Attributes: Vehicle, User, startTime, expectedReturnTime, actualReturnTime
+
+- Bill:
+Attributes: Rent
+Function: GenerateBill
+
+- InventoryManagement
+
+
+
+
+
+
+
+
+
+
+
+
