@@ -1,0 +1,9 @@
+- Board
+Attributes: snakes map[int]int, ladders map[int]int, positionsList from(1 to 100)
+
+- Player
+Attributes: id, name
+
+- Piece
+Attributes: pieceColour, *Player
+
